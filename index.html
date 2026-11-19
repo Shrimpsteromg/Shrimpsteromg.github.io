@@ -85,8 +85,18 @@
 </body>
 </html>
 
-<audio controls>
-  <source src="audio/min-lat.mp3" type="audio/mpeg">
-  <source src="audio/min-lat.ogg" type="audio/ogg">
-  Din webbläsare stöder inte ljuduppspelning.
-</audio>
+<button id="spela">▶ Spela musik</button>
+<audio id="musik" src="audio/min-lat.mp3" loop preload="none"></audio>
+
+<script>
+  document.getElementById('spela').addEventListener('click', function () {
+    const musik = document.getElementById('musik');
+    if (musik.paused) {
+      musik.play();
+      this.textContent = '❚❚ Pausa musik';
+    } else {
+      musik.pause();
+      this.textContent = '▶ Spela musik';
+    }
+  });
+</script>
