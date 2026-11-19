@@ -2,10 +2,85 @@
 <html lang="sv">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Min sida</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #2b2b2b;
+      color: #e8e8e8;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-top: 3rem;
+      color: #ffffff;
+    }
+
+    a {
+      color: #7fb8ff;
+    }
+
+    p {
+      margin: 0 0 1.25rem;
+    }
+
+    /* Avsnitt som är höga nog att sidan ska kunna scrollas */
+    section {
+      min-height: 60vh;
+      border-bottom: 1px solid #3d3d3d;
+      padding-bottom: 2rem;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    /* Länk tillbaka upp, syns längst ner */
+    .top-link {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>knife play</h1>
-  <p>blood play</p>
+  <main>
+    <h1>Hej världen</h1>
+    <p>Min första sida på GitHub Pages — mörkgrå bakgrund och scrollbart innehåll.</p>
+
+    <section id="ett">
+      <h2>Avsnitt ett</h2>
+      <p>Byt ut texten här mot ditt eget innehåll.</p>
+      <p>Varje avsnitt är minst 60 % av skärmhöjden, så det finns något att scrolla genom.</p>
+    </section>
+
+    <section id="tva">
+      <h2>Avsnitt två</h2>
+      <p>Scrollen kommer automatiskt när innehållet blir högre än fönstret — du behöver inte göra något särskilt.</p>
+      <p>Här kan du lägga in bilder, listor eller fler stycken.</p>
+    </section>
+
+    <section id="tre">
+      <h2>Avsnitt tre</h2>
+      <p>Sista avsnittet.</p>
+      <a class="top-link" href="#ett">Tillbaka till toppen</a>
+    </section>
+  </main>
 </body>
 </html>
